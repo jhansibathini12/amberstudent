@@ -1,0 +1,41 @@
+/* Container for the entire page */
+.home-page-wrapper {
+  min-height: 100vh;
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  overflow-x: hidden; /* Prevents horizontal scroll issues from animations */
+}
+
+/* Main content area spacing */
+.home-main-content {
+  flex: 1 0 auto;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Section transitions (Optional) 
+   Adds consistent spacing between sections if not handled 
+   inside the individual components */
+.home-main-content > section {
+  width: 100%;
+  position: relative;
+}
+
+/* Ensure smooth scrolling for the whole page */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Print Styles: Useful for real estate/listing pages */
+@media print {
+  .home-page-wrapper {
+    background-color: white;
+  }
+  
+  /* Hide interactive elements on print */
+  nav, footer, .offers-section {
+    display: none;
+  }
+}

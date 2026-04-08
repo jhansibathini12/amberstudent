@@ -1,0 +1,121 @@
+/* Container Styles */
+.stats-section {
+  background-color: #ffffff;
+  padding-top: 4rem;
+  padding-bottom: 4rem;
+}
+
+.stats-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+/* Grid Layout */
+.stats-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem;
+}
+
+/* Stat Cards */
+.stat-card {
+  text-align: center;
+}
+
+.stat-icon-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1rem;
+}
+
+.stat-icon {
+  width: 4rem;
+  height: 4rem;
+  transition: transform 0.3s ease;
+}
+
+.stat-card:hover .stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 0.5rem;
+}
+
+.stat-label {
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.stat-description {
+  color: #4b5563;
+  max-width: 20rem;
+  margin: 0 auto;
+}
+
+/* Trustpilot Widget */
+.trust-widget-container {
+  margin-top: 3rem;
+  display: flex;
+  justify-content: center;
+}
+
+.trust-card {
+  background-color: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.trust-content {
+  display: flex;
+  align-items: center;
+}
+
+/* Spacing between stars and text */
+.trust-content > * + * {
+  margin-left: 1rem;
+}
+
+.trust-stars {
+  color: #16a34a;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+.trust-score {
+  font-weight: 700;
+  color: #111827;
+}
+
+.trust-review-count {
+  font-size: 0.875rem;
+  color: #4b5563;
+}
+
+/* Responsive Queries */
+@media (min-width: 640px) {
+  .stats-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .stats-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+}

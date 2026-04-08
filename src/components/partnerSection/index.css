@@ -1,0 +1,113 @@
+/* Container Styles */
+.partners-section {
+  background-color: #f9fafb;
+  padding: 4rem 0;
+}
+
+.partners-container {
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+.partners-header {
+  text-align: center;
+  margin-bottom: 3rem;
+}
+
+.partners-title {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 1rem;
+}
+
+/* Carousel Animation Logic */
+.carousel-overflow {
+  position: relative;
+  overflow: hidden;
+  width: 100%;
+  /* Optional: adds a fade effect on sides */
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.carousel-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-animation 30s linear infinite;
+}
+
+.carousel-track.slow {
+  animation-duration: 40s;
+}
+
+@keyframes scroll-animation {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+/* Logo Styles */
+.partner-logo-item, 
+.featured-logo-item {
+  flex-shrink: 0;
+  padding: 0 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.partner-logo {
+  height: 3rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.featured-logo {
+  height: 2rem;
+  object-fit: contain;
+  filter: grayscale(100%);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+}
+
+.partner-logo:hover, 
+.featured-logo:hover {
+  filter: grayscale(0%);
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+/* Featured Section Bottom Spacing */
+.featured-section {
+  margin-top: 5rem;
+}
+
+.featured-header {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.featured-title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #111827;
+}
+
+/* Responsive Breakpoints */
+@media (min-width: 768px) {
+  .partners-title {
+    font-size: 2.25rem;
+  }
+}
+
+@media (min-width: 1024px) {
+  .partners-container {
+    padding: 0 2rem;
+  }
+}

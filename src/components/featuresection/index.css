@@ -1,0 +1,105 @@
+/* Base Section Styles */
+.features-section {
+  background-color: #ffffff;
+  padding: 4rem 0; /* py-16 */
+}
+
+.features-container {
+  max-width: 80rem; /* max-w-7xl */
+  margin: 0 auto;
+  padding: 0 1rem; /* px-4 */
+}
+
+/* Header Styles */
+.features-header {
+  text-align: center;
+  margin-bottom: 3rem; /* mb-12 */
+}
+
+.features-title {
+  font-size: 1.875rem; /* text-3xl */
+  font-weight: 700;
+  color: #111827; /* text-gray-900 */
+  margin-bottom: 1rem; /* mb-4 */
+}
+
+.features-subtitle {
+  color: #4b5563; /* text-gray-600 */
+  font-size: 1.125rem; /* text-lg */
+}
+
+/* Grid Layout */
+.features-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 2rem; /* gap-8 */
+}
+
+/* Feature Card Styles */
+.feature-card {
+  text-align: center;
+  padding: 1.5rem; /* p-6 */
+  border-radius: 0.75rem; /* rounded-xl */
+  transition: all 0.2s ease-in-out;
+}
+
+.feature-card:hover {
+  background-color: #f9fafb; /* hover:bg-gray-50 */
+}
+
+.feature-icon-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 1.5rem; /* mb-6 */
+}
+
+.feature-icon {
+  width: 5rem; /* w-20 */
+  height: 5rem; /* h-20 */
+  transition: transform 0.2s ease-in-out;
+}
+
+.feature-card:hover .feature-icon {
+  transform: scale(1.1); /* group-hover:scale-110 */
+}
+
+.feature-card-title {
+  font-weight: 700;
+  font-size: 1.125rem; /* text-lg */
+  color: #111827;
+  margin-bottom: 0.75rem; /* mb-3 */
+}
+
+.feature-card-description {
+  color: #4b5563;
+  line-height: 1.625; /* leading-relaxed */
+}
+
+/* Responsive Media Queries */
+@media (min-width: 640px) {
+  .features-container {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .features-title {
+    font-size: 2.25rem; /* md:text-4xl */
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(2, 1fr); /* md:grid-cols-2 */
+  }
+}
+
+@media (min-width: 1024px) {
+  .features-container {
+    padding-left: 2rem;
+    padding-right: 2rem;
+  }
+
+  .features-grid {
+    grid-template-columns: repeat(4, 1fr); /* lg:grid-cols-4 */
+  }
+}
