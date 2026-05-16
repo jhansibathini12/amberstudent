@@ -1,4 +1,4 @@
-/* Layout Defaults */
+
 .main-footer {
   background-color: #ffffff;
   border-top: 1px solid #e5e7eb;
@@ -10,7 +10,6 @@
   padding: 0 1rem;
 }
 
-/* Contact Section (Gray Bar) */
 .contact-bar {
   background-color: #f9fafb;
   padding: 3rem 0;
@@ -60,7 +59,6 @@
 
 .icon { width: 1.5rem; height: 1.5rem; }
 
-/* Status Tags */
 .status-tag {
   font-size: 0.75rem;
   color: #ffffff;
@@ -75,7 +73,7 @@
   color: #111827;
 }
 
-/* Colors */
+
 .pink-bg { background-color: #fdf2f8; }
 .pink-text { color: #db2777; }
 .pink-tag { background-color: #ec4899; }
@@ -90,7 +88,7 @@
 .blue-bg { background-color: #eff6ff; }
 .blue-text { color: #2563eb; }
 
-/* Main Navigation Area */
+
 .nav-footer {
   padding: 3rem 0;
 }
@@ -136,7 +134,7 @@
   margin-right: 0.5rem;
 }
 
-/* Column Lists */
+
 .links-column h4 {
   font-weight: 700;
   color: #111827;
@@ -172,7 +170,7 @@
   margin-left: 0.25rem;
 }
 
-/* Social Icons */
+
 .social-icons {
   display: flex;
   gap: 0.75rem;
@@ -190,7 +188,7 @@
   color: #db2777;
 }
 
-/* Payment Footer */
+
 .payment-bar {
   border-top: 1px solid #e5e7eb;
   padding: 1.5rem 0;
@@ -207,7 +205,7 @@
   height: 2rem;
 }
 
-/* Responsiveness */
+
 @media (min-width: 768px) {
   .contact-grid {
     grid-template-columns: repeat(4, 1fr);
