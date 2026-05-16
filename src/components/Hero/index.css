@@ -1,4 +1,4 @@
-/* Hero Container & Backgrounds */
+
 .hero-section {
   position: relative;
   background: linear-gradient(to bottom right, #f3f4f6, #e5e7eb);
@@ -37,7 +37,6 @@
   text-align: center;
 }
 
-/* Typography */
 .hero-pretext {
   color: #ffffff;
   font-size: 1.125rem;
@@ -56,8 +55,6 @@
 .desktop-break {
   display: none;
 }
-
-/* Trust Badges */
 .trust-badges {
   display: flex;
   flex-wrap: wrap;
@@ -89,7 +86,6 @@
   font-weight: 500;
 }
 
-/* Search Bar */
 .search-section {
   max-width: 48rem;
   margin: 0 auto;
@@ -168,7 +164,6 @@
   height: 1.5rem;
 }
 
-/* Responsive Media Queries (Tailwind md & lg) */
 @media (min-width: 640px) {
   .hero-container {
     padding-left: 1.5rem;
