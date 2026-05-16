@@ -1,6 +1,6 @@
 import React from 'react';
 import { ArrowRight } from 'lucide-react';
-import './index.css'; // Importing the standard CSS file
+import './index.css'; 
 
 const ProcessSection = () => {
   const steps = [
@@ -27,7 +27,6 @@ const ProcessSection = () => {
   return (
     <section className="process-section">
       <div className="process-container">
-        {/* Section Header */}
         <div className="process-header">
           <h2 className="process-title">
             Book your place in 3 easy steps
@@ -37,18 +36,15 @@ const ProcessSection = () => {
           </p>
         </div>
 
-        {/* Steps */}
+        
         <div className="steps-wrapper">
           {steps.map((step, index) => (
             <React.Fragment key={step.number}>
               <div className="step-card">
                 <div className="step-content group">
-                  {/* Step Number */}
                   <div className="step-number">
                     {step.number}
                   </div>
-                  
-                  {/* Image */}
                   <div className="step-image-container">
                     <img 
                       src={step.image} 
@@ -57,13 +53,11 @@ const ProcessSection = () => {
                     />
                   </div>
                   
-                  {/* Content */}
                   <h3 className="step-title">{step.title}</h3>
                   <p className="step-description">{step.description}</p>
                 </div>
               </div>
               
-              {/* Arrow */}
               {index < steps.length - 1 && (
                 <div className="step-arrow">
                   <ArrowRight size={32} />
