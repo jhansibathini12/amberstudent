@@ -1,4 +1,4 @@
-/* Container Styles */
+
 .cities-section {
   background-color: #f9fafb;
   padding-top: 4rem;
@@ -12,7 +12,7 @@
   padding-right: 1rem;
 }
 
-/* Header Styles */
+
 .cities-header {
   text-align: center;
   margin-bottom: 3rem;
@@ -30,7 +30,6 @@
   font-size: 1.125rem;
 }
 
-/* Tabs Styles */
 .tabs-container {
   display: flex;
   flex-wrap: wrap;
@@ -74,7 +73,6 @@
   color: #db2777;
 }
 
-/* Cities Grid Styles */
 .cities-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -134,8 +132,6 @@
   font-weight: 700;
   margin: 0;
 }
-
-/* Responsive Media Queries */
 @media (min-width: 640px) {
   .cities-container {
     padding-left: 1.5rem;
