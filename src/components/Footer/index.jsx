@@ -5,7 +5,6 @@ import './index.css';
 const Footer = () => {
   return (
     <footer className="main-footer">
-      {/* Contact Section */}
       <div className="contact-bar">
         <div className="footer-container">
           <div className="contact-header">
@@ -68,8 +67,6 @@ const Footer = () => {
                 </div>
               </div>
             </div>
-
-            {/* Links Columns */}
             <div className="links-column">
               <h4>Company</h4>
               <ul>
