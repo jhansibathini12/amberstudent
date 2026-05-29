@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { Search, Globe, Menu, User } from 'lucide-react';
-// import { Button } from './ui/button';
-import './index.css'; // Importing the standard CSS file
+import './index.css'; 
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -19,12 +18,9 @@ const Navbar = () => {
     <nav className="navbar">
       <div className="navbar-container">
         <div className="navbar-content">
-          {/* Logo */}
           <Link to="/" className="logo-link">
             <span className="logo-text">amber</span>
           </Link>
-
-          {/* Desktop Navigation */}
           <div className="desktop-nav">
             <div className="search-container">
               <input
@@ -37,8 +33,6 @@ const Navbar = () => {
               </button>
             </div>
           </div>
-
-          {/* Right Menu */}
           <div className="right-menu">
             <button className="menu-item">
               <span className="text-sm">Support</span>
@@ -68,8 +62,6 @@ const Navbar = () => {
               <Menu size={20} />
             </button>
           </div>
-
-          {/* Mobile Menu Button */}
           <button
             className="mobile-menu-btn"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -77,8 +69,6 @@ const Navbar = () => {
             <Menu size={24} />
           </button>
         </div>
-
-        {/* Mobile Menu */}
         {isMenuOpen && (
           <div className="mobile-menu">
             <div className="mobile-menu-content">
