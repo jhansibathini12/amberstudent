@@ -45,12 +45,9 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Navigation Footer */}
       <div className="nav-footer">
         <div className="footer-container">
           <div className="nav-grid">
-            {/* Logo and Info */}
             <div className="brand-column">
               <h3 className="footer-logo">amber</h3>
               <p className="copyright">© 2026. All rights reserved.</p>
@@ -123,8 +120,6 @@ const Footer = () => {
           </div>
         </div>
       </div>
-
-      {/* Payment Options */}
       <div className="payment-bar">
         <div className="footer-container">
           <p>Payment Options</p>
